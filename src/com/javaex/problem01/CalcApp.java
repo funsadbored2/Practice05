@@ -8,14 +8,16 @@ public class CalcApp {
 
 		boolean i = true;
 
-		Scanner sc = new Scanner(System.in);
-
 		Add add = new Add();
 		Div div = new Div();
 		Mul mul = new Mul();
 		Sub sub = new Sub();
+		
+		Scanner sc = new Scanner(System.in);
 
 		while (i) {
+			
+			
 
 			System.out.print(">>");
 			String str = sc.nextLine();
@@ -34,21 +36,21 @@ public class CalcApp {
 
 			else if (value[1].equals("-")) {
 
-				add.setValue(a, b);
+				sub.setValue(a, b);
 				System.out.println(">>" + sub.calculate());
 
 			}
 
 			else if (value[1].equals("*")) {
 
-				add.setValue(a, b);
+				mul.setValue(a, b);
 				System.out.println(">>" + mul.calculate());
 
 			}
 
 			else if (value[1].equals("/")) {
 
-				add.setValue(a, b);
+				div.setValue(a, b);
 				System.out.println(">>" + div.calculate());
 
 			} else {
