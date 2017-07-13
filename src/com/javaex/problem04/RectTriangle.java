@@ -8,7 +8,6 @@ public class RectTriangle extends Shape {
 
 		this.width = width;
 		this.height = height;
-		super.countSide = 3;
 
 	}
 
